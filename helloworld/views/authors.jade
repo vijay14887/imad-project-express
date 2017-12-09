@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+   ul
+  each authpost in authpost1
+    li 
+      vijay #{authpost.authornames}
+      |  - #{authpost.count}
+
+  else
+    li There are no authors.

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+
+
+  each authorname in authornames1
+    li=authorname	
+  each count in count2
+    li=count	
+	
+	
+	
+	
+	
+	
+	
+	
+	   ul
+  each authpost in authpost1
+    li 
+      #{authpost.authornames}
+      |  - #{authpost.count}
+
+  else
+    li There are no authors.
